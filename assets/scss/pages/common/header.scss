@@ -1,0 +1,22 @@
+.header {
+  padding: 12px 0;
+  .navbar {
+    padding: 0;
+    #nav-collapse {
+      a {
+        color: #4f5053;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0 14px;
+      }
+  }
+  }
+  .lang-bdr {
+    a {
+      span {
+        border-left: 1px solid #0000007d;
+        padding-left: 13px;
+      }
+    }
+  }
+}
