@@ -1,64 +1,148 @@
 <template>
-<section class="voice">
+  <section class="solutions-main">
+    <section class="inn-banner">
+      <img src="~/assets/img/sol-banner.png" alt="" />
+      <b-container>
+        <div class="inn-slide-cap">
+          <h3>Solutions</h3>
+        </div>
+      </b-container>
+    </section>
 
-<section class="inn-banner">
-    <img src="~/assets/img/sol-banner.png" alt="" />
-    <b-container>
-    <div class="inn-slide-cap">
-        <h3>Solutions</h3>
-    </div>
-    </b-container>
-</section>
+    <section class="tech-chlng">
+        <b-container>
+            <div class="tech-title">
+                <h3>What are your business
+                 and technology challenges?</h3>
+            </div>
 
-<section class="voice-sec">
-    <b-container>
-        <b-row>
+            <b-row>
 
-          <b-col cols="4">
-             <div class="side-links">
-              <ul>
-                <li class="active"><a href=""><span><img src="~/assets/img/sol-img1.png" alt="" /></span> Migrating apps and services  to the cloud</a></li>
-                <li><a href=""><span><img src="~/assets/img/sol-img2.png" alt="" /></span> Enabling customer engagement and collaboration</a></li>
-                <li><a href=""><span><img src="~/assets/img/sol-img3.png" alt="" /></span> Ensuring maximum network performance and uptime</a></li> 
-                <li><a href=""><span><img src="~/assets/img/sol-img4.png" alt="" /></span> Enhancing security and compliance</a></li>  
-              </ul>
-             </div> 
-          </b-col>
-          <b-col cols="8">
-              <div class="voice-br-img">
+              <b-col cols="6">
+                  <div class="tech-blk">
+                      <img src="~/assets/img/tech-img1.png" alt="" />
+                      <h5>Migrating apps and services to the cloud</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                      <a href="">See Solutions</a>
+                  </div>
+              </b-col>
+              <b-col cols="6">
+                  <div class="tech-blk">
+                      <img src="~/assets/img/tech-img2.png" alt="" />
+                      <h5>Enabling customer engagement and collaboration</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                      <a href="">See Solutions</a>
+                  </div>
+              </b-col>
+              <b-col cols="6">
+                  <div class="tech-blk">
+                      <img src="~/assets/img/tech-img3.png" alt="" />
+                      <h5>Ensuring maximum network performance and uptime</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                      <a href="">See Solutions</a>
+                  </div>
+              </b-col>
+              <b-col cols="6">
+                  <div class="tech-blk">
+                      <img src="~/assets/img/tech-img4.png" alt="" />
+                      <h5>Enhancing security and compliance</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                      <a href="">See Solutions</a>
+                  </div>
+              </b-col>
 
-                <div class="voice-bar">
-                  <h3>Lorem Ipsum is simply dummy text of the printing.</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic ypeset ting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-                  <img src="~/assets/img/voice-bar-img.png" alt="" />
-              </div>
-              <div class="voice-bar">
-                  <h3>Lorem Ipsum is simply dummy text of the printing.</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also.</p>
-                  <p>The leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-              </div>
-              <div class="voice-bar">
-                  <h3>Lorem Ipsum is simply dummy text of the printing.</h3>
-                  <ul>
-                    <li>Lorem Ipsum is simply dummy text of the printing.</li>
-                    <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-                    <li>When an unknown printer took a galley of type and scrambled</li>
-                    <li>But also the leap into electronic typesetting, remaining essentially</li>  
-                  </ul>
-              </div>
-              <div class="voice-bar">
-                  <h3>Lorem Ipsum is simply dummy text of the printing.</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also.</p>
-                  <p>The leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus.</p>
-              </div>
+            </b-row>
+        </b-container>
+    </section>
 
-              </div>
-          </b-col>
 
-        </b-row>
-    </b-container>
-</section>
+    <section class="find-sol">
+         <b-container>
+             <div class="find-sol-title">
+                 <h3>Find a solution that meets your needs</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
+             
+             <b-row>
+               
+               <b-col>
+                   <div class="find-sol-blk">
+                       <img src="~/assets/img/find-sol-icon1.png" alt="" />
+                       <h5>Network & Connectivity</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit</p>
+                   </div>
+               </b-col>
+               <b-col>
+                   <div class="find-sol-blk">
+                       <img src="~/assets/img/find-sol-icon2.png" alt="" />
+                       <h5>UC & Voice</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit</p>
+                   </div>
+               </b-col>
+               <b-col>
+                   <div class="find-sol-blk">
+                       <img src="~/assets/img/find-sol-icon3.png" alt="" />
+                       <h5>Security & Compliance</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit</p>
+                   </div>
+               </b-col>
+               <b-col>
+                   <div class="find-sol-blk">
+                       <img src="~/assets/img/find-sol-icon4.png" alt="" />
+                       <h5>Professional Services</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit</p>
+                   </div>
+               </b-col>
 
-<Contactus />
-</section>
-</template>      
+             </b-row>
+         </b-container>
+     </section>
+
+     <section class="deep-look">
+         <b-container>
+             <div class="deep-lk-title">
+                 <h3>Take a deeper look</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
+
+             <b-row>
+
+              <b-col>
+                  <div class="deep-lk-blk">
+                      <img src="~/assets/img/serv-img7.jpg" alt="" />
+                      <div class="deep-lk-blk-inn">
+                      <h5>Lorem ipsum dolor sit amet</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                      <a href="">Learn More</a>
+                      </div>
+                  </div>
+              </b-col>
+              <b-col>
+                  <div class="deep-lk-blk">
+                      <img src="~/assets/img/serv-img8.jpg" alt="" />
+                      <div class="deep-lk-blk-inn">
+                      <h5>Lorem ipsum dolor sit amet</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                      <a href="">Learn More</a>
+                      </div>
+                  </div>
+              </b-col>
+              <b-col>
+                  <div class="deep-lk-blk">
+                      <img src="~/assets/img/serv-img9.jpg" alt="" />
+                      <div class="deep-lk-blk-inn">
+                      <h5>Lorem ipsum dolor sit amet</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                      <a href="">Learn More</a>
+                      </div>
+                  </div>
+              </b-col>
+
+             </b-row>
+         </b-container>
+     </section>
+
+
+    <Contactus />
+  </section>
+</template>
