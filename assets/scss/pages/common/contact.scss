@@ -1,0 +1,77 @@
+.contactuswidget {
+    text-align: center;
+    padding: 160px 0px;
+    background-color: #fffbf3;
+    clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+    .cntc-title {
+        width: 60%;
+        display: inline-block;
+        margin: 0 0 30px;
+    h3 {
+        font-weight: 600;
+        font-size: 39.193px;
+        line-height: 59px;
+        text-align: center;
+        color: #5e6063;
+    }
+    p {
+        font-family: Roboto;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #282727;
+    }
+    }
+    input {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #282727;
+        margin: 0 0 17px;
+        padding: 25px 20px;
+        border: none;
+        box-shadow: 5px 5px 30px rgb(0 0 0 / 3%);
+        background-color: #fff;
+    }
+    textarea {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #282727;
+        margin: 0 0 17px;
+        padding: 25px 20px;
+        border: none;
+        box-shadow: 5px 5px 30px rgb(0 0 0 / 3%);
+        background-color: #fff;
+        height: 170px;
+        resize: none;
+    }
+    .custom-checkbox {
+        text-align: left;
+        margin: 10px 0;
+        .custom-control-label {
+            font-size: 13px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+    button {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 19px;
+        color: #493F3F;
+        background: #D1C2A2;
+        border: none;
+        padding: 18px 60px;
+        border-radius: 30px;
+        display: block;
+        margin-top: 20px;
+    }
+
+}

@@ -1,0 +1,32 @@
+.inn-banner {
+        position: relative;
+        &:before {
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: #d1c2a2;
+            clip-path: polygon(0 12%, 100% 0%, 100% 95%, 0% 75%, 0% 50%);
+        }
+    img {
+        width: 100%;
+        position: relative;
+    }
+    .inn-slide-cap {
+        position: absolute;
+        display: flex;
+        top: 0;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        h3 {
+            font-weight: 600;
+            font-size: 93.862px;
+            line-height: 141px;
+            color: #fff;
+            margin: 0;
+        }
+    }
+}

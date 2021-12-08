@@ -10,8 +10,8 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">Products</b-nav-item>
+        <b-nav-item to="/">Home</b-nav-item>
+        <b-nav-item to="/product">Products</b-nav-item>
         <b-nav-item href="#">Industries</b-nav-item>
         <b-nav-item href="#">Solutions</b-nav-item>
         <b-nav-item href="#">Resources</b-nav-item>

@@ -1,12 +1,15 @@
 .our-partnr {
-    text-align: center;
-    padding: 50px 0;
+        text-align: center;
+        padding: 120px 0 150px;
+        clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+        background-color: #fffbf3;
     img {
         margin: 0 auto;
     }
     .partnr-title {
         margin: 0 0 50px;
         h3 {
+            font-weight: 600;
             font-size: 50px;
             color: #252424;
             margin: 0;
