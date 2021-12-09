@@ -25,11 +25,134 @@
                 <h3>POP List</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            
+
+            <div class="accordion" role="tablist">
+            <b-row>
+                <b-col cols="2">
+                   <div class="acc-img">
+                     <img src="~/assets/img/acc-img1.png" alt="" />
+                   </div> 
+                </b-col>
+                <b-col cols="10">
+                    <div class="acc-con">
+                        <b-card no-body class="mb-1">
+                    <b-card-header header-tag="header" class="p-1" role="tab">
+                        <b-button block v-b-toggle.accordion-1 variant="info">
+                            <h2>Lorem Ipsum is simply dummy text</h2>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived. 
+                            </p>
+                        </b-button>
+
+                    </b-card-header>
+                    <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                        <b-card-body>
+                            <b-card-text>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </b-card-text>
+                        </b-card-body>
+                    </b-collapse>
+                    </b-card>
+                    </div>
+                </b-col>
+            </b-row>
+
+            <b-row>
+                <b-col cols="2">
+                   <div class="acc-img">
+                     <img src="~/assets/img/acc-img2.png" alt="" />
+                   </div> 
+                </b-col>
+                <b-col cols="10">
+                    <div class="acc-con">
+                        <b-card no-body class="mb-1">
+                    <b-card-header header-tag="header" class="p-1" role="tab">
+                        <b-button block v-b-toggle.accordion-2 variant="info">
+                            <h2>Lorem Ipsum is simply dummy text</h2>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived. 
+                            </p>
+                        </b-button>
+
+                    </b-card-header>
+                    <b-collapse id="accordion-2" visible accordion="my-accordion" role="tabpanel">
+                        <b-card-body>
+                            <b-card-text>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </b-card-text>
+                        </b-card-body>
+                    </b-collapse>
+                    </b-card>
+                    </div>
+                </b-col>
+            </b-row>
+
+            <b-row>
+                <b-col cols="2">
+                   <div class="acc-img">
+                     <img src="~/assets/img/acc-img3.png" alt="" />
+                   </div> 
+                </b-col>
+                <b-col cols="10">
+                    <div class="acc-con">
+                        <b-card no-body class="mb-1">
+                    <b-card-header header-tag="header" class="p-1" role="tab">
+                        <b-button block v-b-toggle.accordion-3 variant="info" >
+                            <h2>Lorem Ipsum is simply dummy text</h2>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived. 
+                            </p>
+                        </b-button>
+
+                    </b-card-header>
+                    <b-collapse id="accordion-3" visible accordion="my-accordion" role="tabpanel">
+                        <b-card-body>
+                            <b-card-text>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </b-card-text>
+                        </b-card-body>
+                    </b-collapse>
+                    </b-card>
+                    </div>
+                </b-col>
+            </b-row>
+
+            <b-row class="lst-row">
+                <b-col cols="2">
+                   <div class="acc-img">
+                     <img src="~/assets/img/acc-img4.png" alt="" />
+                   </div> 
+                </b-col>
+                <b-col cols="10">
+                    <div class="acc-con">
+                        <b-card no-body class="mb-1">
+                    <b-card-header header-tag="header" class="p-1" role="tab">
+                        <b-button block v-b-toggle.accordion-4 variant="info" >
+                            <h2>Lorem Ipsum is simply dummy text</h2>
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived. 
+                            </p>
+                        </b-button>
+
+                    </b-card-header>
+                    <b-collapse id="accordion-4" visible accordion="my-accordion" role="tabpanel">
+                        <b-card-body>
+                            <b-card-text>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </b-card-text>
+                        </b-card-body>
+                    </b-collapse>
+                    </b-card>
+                    </div>
+                </b-col>
+            </b-row>
+            </div>
+
         </b-container>
     </section>
    
 
-   <Contactus />
+       <Contactus />
+   
   </section>
 </template>      

@@ -3,18 +3,115 @@
         text-align: center;
         padding: 50px 0;
         .map-blk {
-         h3 {
-            font-weight: 600;
-            font-size: 50px;
-            line-height: 50px;
-            text-align: center;
-            color: #5E6063;
+            h3 {
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #5e6063;
+            }
+            iframe {
+                width: 100%;
+                height: 450px;
+                margin-top: 30px;
+            }
         }
-        iframe {
+    }
+    .pop-list {
+        padding: 210px 0 150px;
+        clip-path: polygon(0 10%, 100% 0, 100% 93%, 0% 100%);
+        background-color: #fffbf3;
+        text-align: center;
+        .pop-list-title {
+            margin: 0 0 30px;
+            h3 {
+                font-weight: 600;
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #5e6063;
+            }
+            p {
+                font-family: Roboto;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                color: #282727;
+                margin: 0;
+                width: 60%;
+                display: inline-block;
+            }
+        }
+        img {
             width: 100%;
-            height: 450px;
-            margin-top: 30px;
+        }
+        .accordion { 
+            .lst-row {
+                border: none !important;
+            }
+            .row {
+            border-bottom: 1px solid #AFAFAF;
+            padding: 43px 0;
+        .acc-con {
+            .card.mb-1 {
+                border: none;
+                background-color: #fffbf3;
+                .card-header {
+                    padding: 0 !important;
+                    border: none;
+                }
+                .btn-info {
+                    background-color: #fffbf3;
+                    border: none;
+                    text-align: left;
+                    padding: 0;
+                    position: relative;
+                    &:focus {
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+                .collapsed::before {
+                    content: '\f067';
+                    position: absolute;
+                    right: 0;
+                    color: #5E6063;
+                    font-family: 'FontAwesome';
+                    top: 5px;
+                }
+                .not-collapsed::before {
+                    content: '\f068';
+                    position: absolute;
+                    right: 0;
+                    color: #5E6063;
+                    font-family: 'FontAwesome';
+                    top: 5px;
+                }
+                h2 {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 32px;
+                    color: #5e6063;
+                    background-color: #fffbf3;
+                    margin: 0 0 18px;
+                }
+                p {
+                    font-family: Roboto;
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: #282727;
+                    text-align: left;
+                }
+                .card-body {
+                    padding: 0;
+                }
+            }
         }
         }
     }
+}
+.contactuswidget {
+    background-color: #fff;
+    padding-top: 60px;
+}
 }

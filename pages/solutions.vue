@@ -20,34 +20,42 @@
 
               <b-col cols="6">
                   <div class="tech-blk">
-                      <img src="~/assets/img/tech-img1.png" alt="" />
-                      <h5>Migrating apps and services to the cloud</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
-                      <a href="">See Solutions</a>
+                      <div class="tech-blk-inn">
+                        <img src="~/assets/img/tech-img1.png" alt="" />
+                        <h5>Migrating apps and services to the cloud</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                        <a href="">See Solutions</a>
+                      </div>
                   </div>
               </b-col>
               <b-col cols="6">
                   <div class="tech-blk">
-                      <img src="~/assets/img/tech-img2.png" alt="" />
-                      <h5>Enabling customer engagement and collaboration</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
-                      <a href="">See Solutions</a>
+                      <div class="tech-blk-inn">
+                        <img src="~/assets/img/tech-img2.png" alt="" />
+                        <h5>Enabling customer engagement and collaboration</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                        <a href="">See Solutions</a>
+                      </div>
                   </div>
               </b-col>
               <b-col cols="6">
                   <div class="tech-blk">
-                      <img src="~/assets/img/tech-img3.png" alt="" />
-                      <h5>Ensuring maximum network performance and uptime</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
-                      <a href="">See Solutions</a>
+                      <div class="tech-blk-inn">
+                        <img src="~/assets/img/tech-img3.png" alt="" />
+                        <h5>Ensuring maximum network performance and uptime</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                        <a href="">See Solutions</a>
+                      </div>
                   </div>
               </b-col>
               <b-col cols="6">
                   <div class="tech-blk">
-                      <img src="~/assets/img/tech-img4.png" alt="" />
-                      <h5>Enhancing security and compliance</h5>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
-                      <a href="">See Solutions</a>
+                      <div class="tech-blk-inn">
+                        <img src="~/assets/img/tech-img4.png" alt="" />
+                        <h5>Enhancing security and compliance</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book it has survived.</p>
+                        <a href="">See Solutions</a>
+                      </div>
                   </div>
               </b-col>
 
