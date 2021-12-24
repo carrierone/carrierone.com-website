@@ -1,7 +1,18 @@
 const express = require('express')
+const md5 = require('md5')
+const cookieParser = require('cookie-parser');
+const sessions = require('express-session');
 const app = express()
+const oneDay = 1000 * 60 * 60 * 24;
+app.use(sessions({
+  secret: md5("cherryvoiceincyrux"),
+  saveUninitialized:true,
+  cookie: { maxAge: oneDay },
+  resave: false
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 const login = require('./login')
 app.use(login)
