@@ -4,7 +4,7 @@ const insert = require('./db/insert.js')
 const validator = require('./validator/index.js') 
 const router = sessionsetup.router
 router.post('/login', async (req, res) => {
-  console.log(req.session.login)
+  console.log(req.session.login, req.session.user)
   const validate = new validator(req.body)
   validate.addrules('email','required')
   validate.addrules('password','required')
@@ -16,6 +16,7 @@ router.post('/login', async (req, res) => {
     try{
       var results = await query.first("select * from admin where `email` = ? AND `password` = ?", [req.body.email, sessionsetup.md5(req.body.password)])
       if(results.id){
+        req.session.user=results
         req.session.login=true
         res.json(results)
       }else{
