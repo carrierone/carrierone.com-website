@@ -15,7 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const login = require('./login')
+const homebanners = require('./home/banners')
 app.use(login)
+app.use('/home/banner',homebanners)
 
 if (require.main === module) {
   const port = 3001
