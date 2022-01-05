@@ -17,6 +17,11 @@ export default {
     script:[
       {
         src: 'https://use.fontawesome.com/3af70af034.js',
+      },
+      {
+        hid: 'tawk.to',
+        src: 'https://embed.tawk.to/6196f4736bb0760a49434cbe/1fkqqlp7p',
+        defer: true
       }
     ]
   },
@@ -49,8 +54,22 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/toast',
   ],
+  toast: {
+      position: 'bottom-right',
+      duration : 1000,
+      register: [ // Register custom toasts
+        {
+          name: 'my-error',
+          message: 'Oops...Something went wrong',
+          options: {
+            type: 'error'
+          }
+        }
+      ]
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

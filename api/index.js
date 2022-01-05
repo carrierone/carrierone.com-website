@@ -18,11 +18,13 @@ const login = require('./login')
 const homebanners = require('./home/banners')
 const testimonials = require('./home/testimonials')
 const partners = require('./home/partners')
+const newsletters = require('./general/newsletters')
 
 app.use(login)
 app.use('/home/banner',homebanners)
 app.use(testimonials)
 app.use(partners)
+app.use(newsletters)
 
 if (require.main === module) {
   const port = 3001
