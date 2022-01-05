@@ -5,16 +5,9 @@
         <h3>Our Partners</h3>
       </div>
       <VueSlickCarousel ref="partnersslick" v-bind="settings">
-        <div><img src="~/assets/img/part-01.png" alt="" /></div>
-        <div><img src="~/assets/img/part-02.png" alt="" /></div>
-        <div><img src="~/assets/img/part-03.png" alt="" /></div>
-        <div><img src="~/assets/img/part-04.png" alt="" /></div>
-        <div><img src="~/assets/img/part-05.png" alt="" /></div>
-        <div><img src="~/assets/img/part-01.png" alt="" /></div>
-        <div><img src="~/assets/img/part-02.png" alt="" /></div>
-        <div><img src="~/assets/img/part-03.png" alt="" /></div>
-        <div><img src="~/assets/img/part-04.png" alt="" /></div>
-        <div><img src="~/assets/img/part-05.png" alt="" /></div>
+        <div v-for="partner in data" :key="partner.id">
+          <img :src="require(`~/assets/${partner.image}`)" />
+        </div>
       </VueSlickCarousel>
     </b-container>
   </section>
@@ -38,5 +31,11 @@ export default {
       },
     };
   },
+  props:{
+    data:{
+      default: [],
+      type: Array
+    }
+  }
 };
 </script>

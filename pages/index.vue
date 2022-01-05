@@ -11,27 +11,13 @@
       style="text-shadow: 1px 1px 2px #333"
     >
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="~/assets/img/banner.png">
-        <h3>This Is</h3>
-        <h1>Carrier One</h1>
-        <p>Comprehensive Voice & Data Telecommunications Solutions</p>
-        <div><a href="">GET STARTED</a></div>
-      </b-carousel-slide>
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide img-src="~/assets/img/banner.png">
-        <h3>This Is</h3>
-        <h1>Carrier One</h1>
-        <p>Comprehensive Voice & Data Telecommunications Solutions</p>
-        <div><a href="">GET STARTED</a></div>
-      </b-carousel-slide>
-
-      <!-- Slides with custom text -->
-      <b-carousel-slide img-src="~/assets/img/banner.png">
-        <h3>This Is</h3>
-        <h1>Carrier One</h1>
-        <p>Comprehensive Voice & Data Telecommunications Solutions</p>
-        <div><a href="">GET STARTED</a></div>
+      <b-carousel-slide v-for="home_banner in home_banners" :key="home_banner.id" :img-src="require(`~/assets/${home_banner.image}`)">
+        <!-- <h3>Carrier One</h3> -->
+        <h1 v-if="home_banner.title">{{home_banner.title}}</h1>
+        <p v-if="home_banner.short_text">{{home_banner.short_text}}</p>
+        <div v-if="home_banner.button_text">
+          <nuxt-link :to="home_banner.button_href">{{home_banner.button_text}}</nuxt-link>
+        </div>
       </b-carousel-slide>
     </b-carousel>
 
@@ -160,45 +146,30 @@
           <h3>Client Reviews</h3>
         </div>
         <VueSlickCarousel ref="clientreviews" v-bind="settings">
-          <div>
+          <div v-for="testimonial in testimonials" :key="testimonial.id">
             <div class="rev-blk">
               <img src="~/assets/img/quote.png" alt="" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ea commodo </p>
-              <h6>John Smith</h6>
-            </div>
-          </div>
-          <div>
-            <div class="rev-blk">
-              <img src="~/assets/img/quote.png" alt="" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ea commodo </p>
-              <h6>John Smith</h6>
-            </div>
-          </div>
-          <div>
-            <div class="rev-blk">
-              <img src="~/assets/img/quote.png" alt="" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ea commodo </p>
-              <h6>John Smith</h6>
-            </div>
-          </div>
-          <div>
-            <div class="rev-blk">
-              <img src="~/assets/img/quote.png" alt="" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ea commodo </p>
-              <h6>John Smith</h6>
+              <p>{{testimonial.review}}</p>
+              <h6>{{testimonial.name}}</h6>
             </div>
           </div>
         </VueSlickCarousel>
-        <button class="lft-arr" @click="goNext"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-        <button class="rit-arr" @click="goPrev"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button class="lft-arr" @click="goPrev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button class="rit-arr" @click="goNext"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
       </b-container>
     </section>
-    <Partners />
+    <Partners :data="partners_data" />
   </section>
 </template>
 <script>
 import VueSlickCarousel from "vue-slick-carousel";
 export default {
+  async asyncData({ $axios }) {
+    const home_banners = await $axios.$get('/api/home/banner')
+    const testimonials = await $axios.$get('/api/testimonials')
+    const partners_data = await $axios.$get('/api/partners')
+    return { home_banners, testimonials, partners_data }
+  },
   components: {
     VueSlickCarousel,
   },
