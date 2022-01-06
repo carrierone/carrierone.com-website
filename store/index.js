@@ -1,6 +1,7 @@
 export const state = () => ({
     user: {},
     isLoggedIn: false,
+    loginErrors: [],
 })
 export const mutations = {
     setLogin(state, loginStatus) {
@@ -8,6 +9,9 @@ export const mutations = {
     },
     setLoginUser(state, User) {
         state.user = User
+    },
+    setLoginErrors(state, errors){
+        state.loginErrors = errors
     }
 }
 export const actions = {
@@ -31,12 +35,16 @@ export const actions = {
         const { data } = await this.$axios.post('/api/login',{
             password: password,
             email: email,
+        }).catch(e=>{
+            return e.response
         })
         if(!data.error){
             if(data.id){
                 commit("setLoginUser", data)
                 commit("setLogin", true)
             }
+        }else{
+            commit("setLoginErrors",data.data)
         }
     },
     async logout({ commit }) {

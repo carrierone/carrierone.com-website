@@ -9,20 +9,20 @@ router.post('/login', async (req, res) => {
   validate.addrules('password','required')
   const validation_result = validate.validate()
   if(!validate.isValid()){
-    res.status(400).json(validation_result);
+    res.status(400).json({error: true, data:validation_result});
   }else{
     const query = new select
     try{
       var results = await query.first("select * from admin where `email` = ? AND `password` = ?", [req.body.email, sessionsetup.md5(req.body.password)])
-      if(results.id){
+      if(results&&results.id){
         req.session.user=results
         req.session.login=true
         res.json(results)
       }else{
-        res.json({error:true,data:{message: 'Failed to login'}})
+        res.json({error:true,data:{email: 'Failed to login'}})
       }
     }catch(ex){
-      res.json({error:true,data:ex})
+      res.json({error:true,data:{email: ex}})
     }
   }
 })

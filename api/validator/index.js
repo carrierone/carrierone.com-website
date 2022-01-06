@@ -27,7 +27,11 @@ module.exports = class validator {
                 }
             }
         }
-        return this.errors;
+        let res = this.errors
+        for(let q in this.errors){
+            res[q] = this.errors[q].join(', ')
+        }
+        return res;
     }
     updateError(result){
         if(result.status==true){
