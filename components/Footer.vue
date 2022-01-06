@@ -37,15 +37,15 @@
               <li>
                 <i class="fa fa-map-marker" aria-hidden="true"></i
                 ><b>Location:</b>
-                <a href="">Lorem ipsum dolor sit amet, Lorem ipsum 404#6018</a>
+                <a href="">{{config.ADDRESS}}</a>
               </li>
               <li>
                 <i class="fa fa-phone" aria-hidden="true"></i><b>Phone:</b>
-                <a href="tel:1234678900">1234678900</a>
+                <a :href="`tel:${config.COMPANYPHONE}`">{{config.COMPANYPHONE}}</a>
               </li>
               <li>
                 <i class="fa fa-envelope" aria-hidden="true"></i><b>Email</b>
-                <a href="mailto:Info@Demolinks.com">Info@Demolinks.com</a>
+                <a :href="`mailto:${config.COMPANYEMAIL}`">{{config.COMPANYEMAIL}}</a>
               </li>
             </ul>
           </div>
@@ -70,36 +70,23 @@
               </button>
             </form>
             <ul>
-              <li>
-                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a href=""
-                  ><i class="fa fa-google-plus" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href=""
-                  ><i class="fa fa-pinterest-p" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              </li>
+              <li><a target="_blank" :href="config.TWITTER"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" :href="config.FACEBOOK"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" :href="config.GOOGLEPLUS"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" :href="config.PINTEREST"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" :href="config.LINKEDIN"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </b-col>
       </b-row>
     </b-container>
     <div class="copyrit">
-      <p>Copyright © 2021Demolinks.com.</p>
+      <p>Copyright © {{config.YEAR}} {{config.COMPANY}}.</p>
     </div>
   </footer>
 </template>
 <script>
+import { mapMutations } from 'vuex'
 export default {
   methods: {
     async saveNewsletter() {
@@ -120,6 +107,11 @@ export default {
     return{
       newsletter_email: '',
       isSendingNewsletter: false,
+    }
+  },
+  computed:{
+    config () {
+      return this.$store.state.config.config
     }
   }
 };

@@ -4,7 +4,6 @@ const insert = require('./db/insert.js')
 const validator = require('./validator/index.js') 
 const router = sessionsetup.router
 router.post('/login', async (req, res) => {
-  //console.log(req.session.login, req.session.user)
   const validate = new validator(req.body)
   validate.addrules('email','required')
   validate.addrules('password','required')
@@ -31,6 +30,9 @@ router.get('/logout', async (req, res) => {
   req.session.user=undefined
   req.session.login=undefined 
   res.json({data: "logged out"})
+})
+router.get('/me', async (req, res) => {
+  res.json({status: (!req.session.login?false:true), data: req.session.user})
 })
 router.post('/register', async (req, res) => {
   const validate = new validator(req.body)

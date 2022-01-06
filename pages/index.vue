@@ -143,7 +143,7 @@
     <section class="client-rev">
       <b-container>
         <div class="client-title">
-          <h3>Client Reviews</h3>
+          <EditorH3 text="Client Reviews" ykey="WELCOME1" />
         </div>
         <VueSlickCarousel ref="clientreviews" v-bind="settings">
           <div v-for="testimonial in testimonials" :key="testimonial.id">
@@ -196,6 +196,6 @@ export default {
     goPrev() {
       this.$refs.clientreviews.prev()
     },
-  }
+  },
 };
 </script>
