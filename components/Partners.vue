@@ -2,7 +2,7 @@
   <section class="our-partnr">
     <b-container>
       <div class="partnr-title">
-        <h3>Our Partners</h3>
+        <EditorInline text="Our Partners" type="h3" ykey="PARTNERS1" />
       </div>
       <VueSlickCarousel ref="partnersslick" v-bind="settings">
         <div v-for="partner in data" :key="partner.id">

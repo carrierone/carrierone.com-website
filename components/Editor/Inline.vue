@@ -1,6 +1,7 @@
 <template>
   <h3
     @blur="handleContent"
+    :is="type"
     :contenteditable="isLogin === true ? 'true' : 'false'"
     :class="isLogin === true ? 'allowedit' : ''"
     :data-key="isLogin === true?ykey:''"
@@ -26,6 +27,10 @@ export default {
     text: {
       type: String,
       default: "",
+    },
+    type: {
+      type: String,
+      default: "p",
     },
     ykey: {
       type: String,

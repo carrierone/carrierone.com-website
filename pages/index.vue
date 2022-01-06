@@ -35,22 +35,16 @@
                 About<br />
                 <b>Carrier One</b>
               </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
+              <EditorInline text="Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
-                text.
-              </p>
-              <p>
-                Ever since the 1500s, when an unknown printer took a galley of
+                text." type="p" ykey="WELCOME2" />
+              <EditorInline text="Ever since the 1500s, when an unknown printer took a galley of
                 type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap.
-              </p>
-              <p>
-                Into electronic typesetting, remaining essentially unchanged. It
+                survived not only five centuries, but also the leap." type="p" ykey="WELCOME3" />
+              <EditorInline text="Into electronic typesetting, remaining essentially unchanged. It
                 was popularised in the 1960s with the release of Letraset sheets
                 containing Lorem Ipsum passages, and more recently with desktop
-                publish software like aldus pagemaker.
-              </p>
+                publish software like aldus pagemaker." type="p" ykey="WELCOME4" />
             </div>
           </b-col>
         </b-row>
@@ -60,11 +54,9 @@
     <section class="prod-sec">
       <b-container>
         <div class="prod-title">
-          <h3>Popular Products & Services</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <EditorInline text="Popular Products & Services" type="h3" ykey="WELCOME5" />
+          <EditorInline text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua." type="p" ykey="WELCOME6" />
         </div>
         <ProductServices />
         <div>
@@ -83,15 +75,13 @@
           </b-col>
           <b-col cols="5">
             <div class="we-conn-blk">
-              <h3>We Connect The World</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed
+              <EditorInline text="We Connect The World" type="h3" ykey="WELCOME7" />
+              <EditorInline text="Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed
                 do eiusmod tempor incididunt.ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco labor
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
+                nulla pariatur." type="p" ykey="WELCOME8" />
               <a href="">COMPANY INFO</a>
             </div>
           </b-col>
@@ -102,7 +92,7 @@
     <section class="take-deep">
       <b-container>
         <div class="take-deep-title">
-          <h3>Take a Deeper Look</h3>
+          <EditorInline text="Take a Deeper Look" type="h3" ykey="WELCOME9" />
         </div>
 
         <b-row>
@@ -143,7 +133,7 @@
     <section class="client-rev">
       <b-container>
         <div class="client-title">
-          <EditorH3 text="Client Reviews" ykey="WELCOME1" />
+          <EditorInline text="Client Reviews" type="h3" ykey="WELCOME1" />
         </div>
         <VueSlickCarousel ref="clientreviews" v-bind="settings">
           <div v-for="testimonial in testimonials" :key="testimonial.id">
