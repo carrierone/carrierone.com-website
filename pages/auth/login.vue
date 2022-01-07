@@ -72,10 +72,21 @@ export default {
                 this.error.password = this.loginErrors.password
             }
         },
+        isLoggedIn(){
+          this.error.password = ''
+          this.error.email = ''
+          if(this.isLoggedIn===true){
+            this.$toast.success('Login Successful')
+            this.$router.push('/');
+          }
+        }
     },
     computed:{
         loginErrors(){
             return this.$store.state.loginErrors
+        },
+        isLoggedIn(){
+          return this.$store.state.isLoggedIn
         }
     }
 };

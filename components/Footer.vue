@@ -4,15 +4,11 @@
       <b-row>
         <b-col cols="3">
           <div class="ftr-title">
-            <h4>About Us</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum
-              dolor sit amet, consectetur
-            </p>
+            <EditorInline text="About Us" type="h4" ykey="FOOTER3" />
+            <EditorInline text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua." type="p" ykey="FOOTER4" />
+            <EditorInline text="Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum
+              dolor sit amet, consectetur" type="p" ykey="FOOTER5" />
           </div>
         </b-col>
 
@@ -53,8 +49,8 @@
 
         <b-col cols="4">
           <div class="ftr-news">
-            <h4>Join Our Newsletter</h4>
-            <p>Lorem Ipsum has been the industry's</p>
+            <EditorInline text="Join Our Newsletter" type="h4" ykey="FOOTER1" />
+            <EditorInline text="Lorem Ipsum has been the industry's" type="p" ykey="FOOTER2" />
             <form>
               <input
                 v-model="newsletter_email"

@@ -16,6 +16,8 @@
         <b-nav-item href="#">Solutions</b-nav-item>
         <b-nav-item href="#">Resources</b-nav-item>
         <b-nav-item href="#">Support</b-nav-item>
+        <b-nav-item v-if="isLogin===true" @click="logout">Logout</b-nav-item>
+        
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -32,3 +34,18 @@
     </b-container>
   </header>
 </template>
+<script>
+export default {
+  computed: {
+    isLogin() {
+      return this.$store.state.isLoggedIn;
+    }
+  },
+  methods:{
+    logout(){
+      this.$store.dispatch('logout')
+      this.$toast.success('Logout Successful')
+    }
+  }
+}
+</script>

@@ -31,9 +31,9 @@
           </b-col>
           <b-col cols="5">
             <div class="about-blk">
+              <EditorInline class="m-0" text="About" type="h2" ykey="WELCOME10" />
               <h2>
-                About<br />
-                <b>Carrier One</b>
+                <EditorInline text="Carrier One" type="b" ykey="WELCOME11" />
               </h2>
               <EditorInline text="Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
